@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ConvCalc</string>
+    <string name="from">From</string>
+    <string name="fromUnits">Yards</string>
+    <string name="toUnits">Meters</string>
+    <string name="to">To</string>
+    <string name="fromHint">Enter from value</string>
+    <string name="toHint">Enter to value</string>
+    <string name="calculateButton">Calculate</string>
+    <string name="clearButton">Clear</string>
+    <string name="modeButton">Mode</string>
+    <string name="title">Length Converter</string>
+    <string name="title_activity_my_settings">Settings</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    s
+</resources>
