@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public static int SETTINGS_RESULT = 1;
     public static int HISTORY_RESULT = 2;
 
-    private enum Mode {Length, Volume};
+    public enum Mode {Length, Volume};
 
     private Mode mode = Mode.Length;
     private Button calcButton;
