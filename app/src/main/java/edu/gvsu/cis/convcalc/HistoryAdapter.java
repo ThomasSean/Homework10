@@ -42,7 +42,8 @@ public class HistoryAdapter extends
         DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd");
 
         for (HistoryItem hi : items) {
-            String key = "Entries for " + fmt.print(hi.timestamp);
+            //String key = "Entries for " + fmt.print(Long.parseLong(hi.timestamp));
+            String key = "Entries for " + fmt.print(Long.parseLong((hi.timestamp)));
             List<HistoryItem> list = this.dayValues.get(key);
             if (list == null) {
                 list = new ArrayList<HistoryItem>();

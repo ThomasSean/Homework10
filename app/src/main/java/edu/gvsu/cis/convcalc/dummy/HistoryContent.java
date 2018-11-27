@@ -5,9 +5,7 @@ import org.joda.time.DateTime;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -21,10 +19,6 @@ public class HistoryContent {
 
     static {
         DateTime now = DateTime.now();
-        addItem(new HistoryItem(2.0, 1.829, "Length", "Yards", "Meters", now.minusDays(1)));
-        addItem(new HistoryItem(1.0, 3.785, "Volume", "Gallons", "Liters", now.minusDays(1)));
-        addItem(new HistoryItem(2.0, 1.829, "Length", "Yards", "Meters", now.plusDays(1)));
-        addItem(new HistoryItem(1.0, 3.785, "Volume", "Gallons", "Liters", now.plusDays(1)));
     }
 
     public static void addItem(HistoryItem item) {
@@ -37,11 +31,12 @@ public class HistoryContent {
         public final String mode;
         public final String fromUnits;
         public final String toUnits;
+        public String _key;
 
-        public final DateTime timestamp;
+        public final String timestamp;
 
         public HistoryItem(Double fromVal, Double toVal, String mode,
-                           String fromUnits, String toUnits, DateTime timestamp) {
+                           String fromUnits, String toUnits, String timestamp) {
             this.fromVal = fromVal;
             this.toVal = toVal;
             this.mode = mode;
