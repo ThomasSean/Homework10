@@ -17,23 +17,22 @@ public class HistoryContent {
 
     public static final List<HistoryItem> ITEMS = new ArrayList<HistoryItem>();
 
-    static {
-        DateTime now = DateTime.now();
-    }
-
     public static void addItem(HistoryItem item) {
         ITEMS.add(item);
     }
 
     public static class HistoryItem {
-        public final Double fromVal;
-        public final Double toVal;
-        public final String mode;
-        public final String fromUnits;
-        public final String toUnits;
+        public Double fromVal;
+        public Double toVal;
+        public String mode;
+        public String fromUnits;
+        public String toUnits;
+        public String timestamp;
         public String _key;
 
-        public final String timestamp;
+        public HistoryItem(){
+        }
+
 
         public HistoryItem(Double fromVal, Double toVal, String mode,
                            String fromUnits, String toUnits, String timestamp) {
@@ -44,6 +43,8 @@ public class HistoryContent {
             this.toUnits = toUnits;
             this.timestamp = timestamp;
         }
+
+
 
         @Override
         public String toString() {
