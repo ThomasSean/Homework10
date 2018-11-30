@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        allHistory = new ArrayList<HistoryContent.HistoryItem>();
         setContentView(R.layout.activity_main);
 
         calcButton = findViewById(R.id.calcButton);
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 toField.getText().clear();
             }
         });
-        allHistory = new ArrayList<HistoryContent.HistoryItem>();
+
 //
     }
 
